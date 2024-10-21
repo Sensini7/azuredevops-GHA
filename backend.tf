@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "tfstates"
-    storage_account_name = "pskstfstateaccount"
+    resource_group_name  = "tfstate"
+    storage_account_name = "sensiniadtfstate713"
     container_name       = "tfstate"
-    key                  = "terraform.tfstate"
+    key                  = "prod.terraform.tfstate"
   }
 }
